@@ -1,0 +1,43 @@
+.products ul {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      200px,
+      1fr
+    )
+  );
+  gap: 1rem;
+}
+
+.products li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+}
+
+.products img {
+  border-radius: 4px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: #fff;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+}
